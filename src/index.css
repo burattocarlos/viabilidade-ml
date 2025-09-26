@@ -1,3 +1,15 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+/* Customizações do tema */
+@theme {
+  --color-primary: #3b82f6;
+  --color-secondary: #64748b;
+  --font-family-display: "Inter", sans-serif;
+}
+
+/* Classes personalizadas */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
