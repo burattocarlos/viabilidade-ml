@@ -9,7 +9,6 @@
     "ajv": "^6.12.6",
     "ansi-styles": "^4.3.0",
     "argparse": "^2.0.1",
-    "autoprefixer": "^10.4.21",
     "balanced-match": "^1.0.2",
     "baseline-browser-mapping": "^2.8.7",
     "brace-expansion": "^1.1.12",
@@ -93,7 +92,6 @@
     "path-key": "^3.1.1",
     "picocolors": "^1.1.1",
     "picomatch": "^4.0.3",
-    "postcss": "^8.5.6",
     "postcss-value-parser": "^4.2.0",
     "prelude-ls": "^1.2.1",
     "punycode": "^2.3.1",
@@ -109,7 +107,6 @@
     "source-map-js": "^1.2.1",
     "strip-json-comments": "^3.1.1",
     "supports-color": "^7.2.0",
-    "tailwindcss": "^4.1.13",
     "tapable": "^2.2.3",
     "tar": "^7.5.1",
     "tinyglobby": "^0.2.15",
@@ -123,7 +120,9 @@
     "yocto-queue": "^0.1.0"
   },
   "scripts": {
-    "build": "vite build"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -137,6 +136,9 @@
   },
   "homepage": "https://github.com/burattocarlos/viabilidademl#readme",
   "devDependencies": {
-    "@vitejs/plugin-react": "^5.0.3"
+    "@vitejs/plugin-react": "^5.0.3",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.0"
   }
 }
