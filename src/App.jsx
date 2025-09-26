@@ -43,56 +43,53 @@ function App() {
         <div className="max-w-6xl w-full bg-white p-8 rounded-2xl shadow-lg">
 
           <div className="mb-10">
-            <table className="w-full border-collapse">
-              <thead>
-                <tr>
-                  <th className="text-left p-3 font-semibold text-slate-600 uppercase tracking-wider text-sm">CÓDIGO</th>
-                  <th className="text-left p-3 font-semibold text-slate-600 uppercase tracking-wider text-sm">% TAXA</th>
-                  <th className="text-left p-3 font-semibold text-slate-600 uppercase tracking-wider text-sm">CUSTO</th>
-                  <th className="text-left p-3 font-semibold text-slate-600 uppercase tracking-wider text-sm">PREÇO DE VENDA</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className="p-2">
-                    <input
-                      type="text"
-                      value={codigo}
-                      onChange={(e) => setCodigo(e.target.value)}
-                      placeholder="Ex: SKU-001"
-                      className="w-full p-3 bg-slate-100 border-2 border-slate-200 rounded-lg shadow-inner focus:ring-2 focus:ring-sky-500 focus:border-transparent transition"
-                    />
-                  </td>
-                  <td className="p-2">
-                    <input
-                      type="number"
-                      value={taxa}
-                      onChange={(e) => setTaxa(e.target.value)}
-                      placeholder="Ex: 16.5"
-                      className="w-full p-3 bg-slate-100 border-2 border-slate-200 rounded-lg shadow-inner focus:ring-2 focus:ring-sky-500 focus:border-transparent transition"
-                    />
-                  </td>
-                  <td className="p-2">
-                    <input
-                      type="number"
-                      value={custo}
-                      onChange={(e) => setCusto(e.target.value)}
-                      placeholder="Ex: 75.50"
-                      className="w-full p-3 bg-slate-100 border-2 border-slate-200 rounded-lg shadow-inner focus:ring-2 focus:ring-sky-500 focus:border-transparent transition"
-                    />
-                  </td>
-                  <td className="p-2">
-                    <input
-                      type="number"
-                      value={precoVenda}
-                      onChange={(e) => setPrecoVenda(e.target.value)}
-                      placeholder="Ex: 120.00"
-                      className="w-full p-3 bg-slate-100 border-2 border-slate-200 rounded-lg shadow-inner focus:ring-2 focus:ring-sky-500 focus:border-transparent transition"
-                    />
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+              <div>
+                <label className="block p-3 font-semibold text-slate-600 uppercase tracking-wider text-sm">CÓDIGO</label>
+                <input
+                  type="text"
+                  value={codigo}
+                  onChange={(e) => setCodigo(e.target.value)}
+                  placeholder="Ex: SKU-001"
+                  className="w-full p-3 bg-slate-100 border-2 border-slate-200 rounded-lg shadow-inner focus:ring-2 focus:ring-sky-500 focus:border-transparent transition"
+                />
+              </div>
+
+              <div>
+                <label className="block p-3 font-semibold text-slate-600 uppercase tracking-wider text-sm">% TAXA</label>
+                <input
+                  type="number"
+                  value={taxa}
+                  onChange={(e) => setTaxa(e.target.value)}
+                  placeholder="Ex: 16.5"
+                  className="w-full p-3 bg-slate-100 border-2 border-slate-200 rounded-lg shadow-inner focus:ring-2 focus:ring-sky-500 focus:border-transparent transition"
+                />
+              </div>
+
+              <div>
+                <label className="block p-3 font-semibold text-slate-600 uppercase tracking-wider text-sm">CUSTO</label>
+                <input
+                  type="number"
+                  value={custo}
+                  onChange={(e) => setCusto(e.target.value)}
+                  placeholder="Ex: 75.50"
+                  className="w-full p-3 bg-slate-100 border-2 border-slate-200 rounded-lg shadow-inner focus:ring-2 focus:ring-sky-500 focus:border-transparent transition"
+                />
+              </div>
+
+              <div>
+                <label className="block p-3 font-semibold text-slate-600 uppercase tracking-wider text-sm">PREÇO DE VENDA</label>
+                <input
+                  type="number"
+                  value={precoVenda}
+                  onChange={(e) => setPrecoVenda(e.target.value)}
+                  placeholder="Ex: 120.00"
+                  className="w-full p-3 bg-slate-100 border-2 border-slate-200 rounded-lg shadow-inner focus:ring-2 focus:ring-sky-500 focus:border-transparent transition"
+                />
+              </div>
+
+            </div>
           </div>
 
           <div className="border-t-2 border-slate-200 pt-10">
