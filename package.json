@@ -135,5 +135,8 @@
   "bugs": {
     "url": "https://github.com/burattocarlos/viabilidademl/issues"
   },
-  "homepage": "https://github.com/burattocarlos/viabilidademl#readme"
+  "homepage": "https://github.com/burattocarlos/viabilidademl#readme",
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.3"
+  }
 }
